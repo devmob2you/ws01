@@ -1,0 +1,192 @@
+@charset "UTF-8";
+html, body, span, p, form, img, a, ul, ol, li, table, tr, td, div{
+margin: 0;
+padding: 0; 
+border:none; 
+outline:none;
+list-style:none;
+vertical-align:baseline;
+list-style-type:none;
+}
+/*body{overflow-x: hidden;*/ /*background-position:fixed;*/}
+
+*{font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;}
+
+.bgTopoLeft{
+	width: 100%;
+	height: 694px;
+	margin: 0 auto;
+	background-image: url(../img/home/bg_repeat_top.png);
+	background-repeat: repeat-x;
+	float: left;
+	position: absolute;
+	z-index: 0;
+	top: 0;
+}
+.bgTopoRight{
+	width: 623px;
+	height: 694px;
+	margin: 0 auto;
+	background-image: url(../img/home/bg_norepeat_right.png);
+	background-repeat: no-repeat;
+	float: left;
+	position: absolute;
+	margin-left: 53%;
+	z-index: 1;
+		top: 0;
+	/*border-width: thin;
+	border-style: solid;
+	border-color: black; */
+}
+.menu{
+	width: 100%;
+	height: 140px;
+	margin: 0 auto;
+	position: absolute;
+	z-index: 1;
+}
+.contato{float: right;margin-top: 5px;margin-right: 15px;}
+
+.menuLinks{
+	width: 587px;
+	height: 71px;
+	float: right;
+	margin-top: 45px;
+	margin-left: -50px;
+	background-image: url(../img/home/bg_menu.png);
+	position: absolute;
+	left: 57%;
+	z-index: 3;
+}
+.logo{margin-top: 5px;margin-left: 5%;}
+
+.slide{
+	width: 619px;
+	height: 637px;
+	/*background-image: url(../img/home/img_slider_casa.png);
+	background-repeat: no-repeat;*/
+	position: absolute;
+	left: 58%;
+}
+.slide1{
+	width: 521px;
+	height: 501px;
+	background-image: url(../img/home/img_slider_casa.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 110px;
+}
+.textoSlider1{
+	width: 445px;
+	height: 530px;
+	position: relative;
+	top: 160px;
+	left: 5%;
+}
+#txtProtecao{
+	width: 100%;
+	height: 180px;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+.faixaAzul{margin-top: 20px;}
+
+#txtCeramica{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+.buttons{
+	position: absolute;
+	top: 480px;
+	left:59%;
+	z-index: 5;
+}
+
+.clear{clear: both;}
+
+.bgMeio{
+	width: 100%;
+	height: 380px;;
+	margin: 0 auto;
+	background-image: url(../img/home/bg_repeat_meio.png);
+	background-repeat: repeat-x;
+	position: absolute;
+	top: 691px;
+	z-index: 0;
+}
+.bgSubMeio{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	background-image: url(../img/home/bg_repeat_abaixo_body.png);
+	background-repeat: repeat-x;
+	position: absolute;
+	top: 1070px;
+	z-index: 0;
+}
+.bgrodape{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	/*background-image: url(../img/home/bg_repeat_rodape.png);*/
+	/*background-color:#fefaf6;*/
+	background-color:#fefaf6;;
+	/*background-repeat: repeat-x;*/
+	position: absolute;
+	top: 1339px;
+	z-index: 0;
+}
+
+.imgProjetos{
+	float:left;
+	margin-left: 5%;
+}
+.projetos{
+	width: 500px;
+	height:350px;
+	float: left;
+	border: 1px solid black;
+	margin-left: 15%;
+}
+.blocos{
+	width: 40%;
+	height: auto;
+	border: 1px solid red;
+}
+.telhas{
+	width: 40%;
+	height: auto;
+	border: 1px solid red;
+}
+
+/* ESTILIZAÇÃO DE TEXTOS*/
+.contato p{
+	color: #5b5b5b;
+	font-weight: bold;
+	font-size: 12px;
+	font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+	
+}
+.menuLinks ul{
+	padding:0px;
+	margin:20px;
+	margin-left: 65px;
+	list-style:none;
+	margin-top: 26px;
+}
+.menuLinks ul li { 
+	display: inline; 
+	margin-right: 10px;
+}
+.menuLinks ul li a{ 
+	margin-left: 18px;
+	text-decoration: none;
+	color: #9b9b9a;
+	font-weight: bold;
+	font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+}
+.menuLinks ul li a:hover{
+	color: #f7a565;
+	font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+}

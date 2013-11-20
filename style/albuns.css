@@ -1,0 +1,62 @@
+*{ margin: 0; padding: 0;} /* Reset CSS */
+
+#album{
+	margin: 0 auto;
+	text-align:center;
+	width: 954px;;
+	height: auto;
+
+	
+}
+
+#tbAlbum{
+	margin: 0 auto;
+}
+
+#capaAlbum{
+	width: 265px;
+	height: 250px;
+	margin-top: 15px;
+	margin-left: 15px;
+	background-image: url(../imagens/albuns/molduraImagens.png);
+	background-repeat: no-repeat;
+	float: left;
+	
+}
+
+#capaAlbum img{
+	margin-top: 5px;
+}
+
+#legendaAlbum{
+	margin-top: 28px;
+}
+
+.clear{
+	clear: both;
+}
+#tbAlbum ul{
+	padding:0px;
+	/*margin-left: 20px;*/
+	
+	list-style:none;
+}
+#tbAlbum ul li { 
+	display: inline; 
+}
+#tbAlbum ul li a{ 
+	margin-right: 45px;
+	text-decoration: none;
+	color: #9b9b9a;
+	font-weight: bold;
+	font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+}
+#tbAlbum ul li a:hover{
+	color: #f7a565;
+	font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+}
+
+#anoAlbum{
+	text-align: right;
+	margin-right: 80px;
+}
