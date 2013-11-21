@@ -4,11 +4,9 @@
 <title>Barrobello - Blocos e telhas cerâmicas</title>
 <style>
 body{font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;}
-.menu{display:inline; line-height:60px; text-decoration:none; color:#9b9b9a; font-weight:bold; padding:0px 7px; text-align:center;}
+.menu{display:inline; line-height:60px; text-decoration:none; color:#9b9b9a; font-weight:bold; padding:0 7px; text-align:center;}
 .menu:hover{color:#f7a565;}
 </style>
-
-
    	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 	<script type="text/javascript" src="js/jquery.jcarousel.pack.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/jquery.jcarousel.css" />
