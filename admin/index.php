@@ -15,7 +15,7 @@ if(empty($usuarioLogado)){
     // Conecta-se ao banco de dados usando os valores padrões
     $sql->conecta();
         // Define e executa uma query SQL
-    $busca = "SELECT * FROM tabAlbuns";
+    $busca = "SELECT * FROM tabalbuns";
     $sql->consulta($busca);
 	
 	//Nova conexao, para CAPA
@@ -47,6 +47,7 @@ if(empty($usuarioLogado)){
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
  <head>
+ <meta charset="UTF-8">
    <title>Area administrativa - Ceramica Barrobello</title>
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 
@@ -212,8 +213,8 @@ body{
 <div id="frameLstImg">
 <?php 
 	$mysql_hostname = "localhost";
-	$mysql_user = "root";
-	$mysql_password = "";
+	$mysql_user = "hesk";
+	$mysql_password = "programador321";
 	$mysql_database = "barrobello";
 	$prefix = "";
 	

@@ -1,9 +1,14 @@
 <?php
 	class conectar {
  
-    var $host       = 'localhost';
+    /*var $host       = 'localhost';
     var $usuario    = 'root';
     var $senha      = '';
+    var $banco      = 'barrobello';*/
+	
+	var $host       = 'localhost';
+    var $usuario    = 'hesk';
+    var $senha      = 'programador321';
     var $banco      = 'barrobello';
  
     var $conexao    = null;

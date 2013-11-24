@@ -2,9 +2,9 @@
 
 define ("DB_HOST", "localhost"); // set database host
 
-define ("DB_USER", "root"); // set database user
+define ("DB_USER", "hesk"); // set database user
 
-define ("DB_PASS",""); // set database password
+define ("DB_PASS","programador321"); // set database password
 
 define ("DB_NAME","barrobello"); // set database name
 

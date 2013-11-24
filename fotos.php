@@ -20,12 +20,12 @@ else
 
 	
 	if($filtro <> ""){
-		$busca = "SELECT distinct idAlbuns, ano, imgCapa, nomeAlbum FROM tabAlbuns WHERE idAlbuns > 0 $filtro ";
+		$busca = "SELECT distinct idAlbuns, ano, imgCapa, nomeAlbum FROM tabalbuns WHERE idAlbuns > 0 $filtro ";
     	$sql->consulta($busca);
 	}
 	else
 	{
-		$busca = "SELECT distinct idAlbuns, ano, imgCapa, nomeAlbum FROM tabAlbuns order by ano";
+		$busca = "SELECT distinct idAlbuns, ano, imgCapa, nomeAlbum FROM tabalbuns order by ano";
     	$sql->consulta($busca);
 	}
     
@@ -35,11 +35,11 @@ else
 	$sql2 = new conectar();
 	$sql2->conecta();
 	if($filtro <> ""){
-		$busca2 = "SELECT distinct idAlbuns, ano, imgCapa, nomeAlbum FROM tabAlbuns WHERE ano =  ".$linkAno;
+		$busca2 = "SELECT distinct idAlbuns, ano, imgCapa, nomeAlbum FROM tabalbuns WHERE ano =  ".$linkAno;
 	}
 	else
 	{
-		$busca2 = "SELECT distinct idAlbuns, ano, imgCapa, nomeAlbum FROM tabAlbuns order by ano desc limit 3";
+		$busca2 = "SELECT distinct idAlbuns, ano, imgCapa, nomeAlbum FROM tabalbuns order by ano desc limit 3";
 	}
 	$sql2->consulta($busca2);
 	
@@ -48,23 +48,23 @@ else
 	$sql3->conecta();
 	$filtro3 = "";
 	if($filtro3 <> ""){
-		$busca3 = "SELECT distinct ano FROM tabAlbuns WHERE ano =  ".$linkAno." limit 5";
+		$busca3 = "SELECT distinct ano FROM tabalbuns WHERE ano =  ".$linkAno." limit 5";
 	}
 	else
 	{
-		$busca3 = "SELECT distinct ano FROM tabAlbuns limit 5";
+		$busca3 = "SELECT distinct ano FROM tabalbuns limit 5";
 	}
 	$sql3->consulta($busca3);
 	//Jogar esse white num bloco php
     /*while ($dados = $sql->resultado()) {
         echo $dados['ano'];
     } */
-
-    
+ 
 ?>
 <!DOCTYPE HTML>
 <html lang="pt-BR">
 <head>
+<meta charset="UTF-8">
 <title>Barrobello - Blocos e telhas cerâmicas</title>
 <script src="scripts/jquery-1.10.2.min.js"></script>
 <script src="scripts/album.js"></script>
@@ -73,14 +73,16 @@ else
 body{font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;}
 .menu{display:inline; line-height:60px; text-decoration:none; color:#9b9b9a; font-weight:bold; padding:0px 7px; text-align:center;}
 .menu:hover{color:#f7a565;}
+*{font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;}
 </style>
 </head>
 <body style='margin:0px; background-image:url(imagens/bgblocos.png);'>
 <div style='width:980px; margin:0px auto; background-image:url(imagens/bgtopoblocos.png); background-position:right; background-repeat:no-repeat;'>
 	<div style='display:table-cell; width:360px; height:140px; text-align:center;'><a href="index.php"><img src="imagens/logo.png" border=0></a></div>
 	<div style='display:table-cell; width:620px; height:140px; vertical-align:top;'>
-		<div align="right" style='color:#5b5b5b; font-weight:bold; font-size:12px; padding:40px 8px 0px 0px;'>
-			0800 - 703 1533<br />TEL/FAX: 21(19)3567-1533 - vendas@ceramicabarrobello.com.br
+		<div align="right" style='color:#5b5b5b;font-weight:bold;font-size:12px; padding:40px 8px 0px 0px;'>
+			<span><a href="contato.php" style="text-decoration: none;color:#5b5b5b;font-weight:bold;font-size:12px;" href="#">0800 - 703 1533<br />
+    TEL/FAX: 21(19)3567-1533 - vendas@ceramicabarrobello.com.br</a></span>
 		</div>
 		<div style="padding:0px; margin:20px; margin-right:45px; text-align:right;">
 			<a class=menu href="ceramica.php">A CERÂMICA</a>
@@ -114,14 +116,6 @@ body{font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pr
 		    } 
 		?>
 		</tr>
-		<!--
-		<tr>
-		<td id="capaAlbum"><img src="imagens/albuns/capa/imgCapa.png"/><p id="legendaAlbum">FEICON</p></td>
-		<td id="capaAlbum"><img src="imagens/albuns/capa/imgCapa.png"/><p id="legendaAlbum">FABRICA</p></td>
-		<td id="capaAlbum"><img src="imagens/albuns/capa/imgCapa.png"/><p id="legendaAlbum">OUTRO1</p></td>
-		<td id="capaAlbum"><img src="imagens/albuns/capa/imgCapa.png"/><p id="legendaAlbum">OUTRO2</p></td>	
-	</tr>
-	-->	
 </table>
 	
 </div>

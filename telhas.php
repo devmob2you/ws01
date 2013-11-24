@@ -1,12 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="pt-BR">
 <head>
+<meta charset="UTF-8">
 <title>Barrobello - Blocos e telhas cerâmicas</title>
 <style>
 body{font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;}
 .menu{display:inline; line-height:60px; text-decoration:none; color:#9b9b9a; font-weight:bold; padding:0px 7px; text-align:center;}
 .menu:hover{color:#f7a565;}
 span{color:#F7A565;}
+*{font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;}
 </style>
 <script>
 function telha(t)
@@ -27,8 +29,9 @@ function telha(t)
 <div style='width:980px; margin:0px auto; background-image:url(imagens/bgtopoblocos.png); background-position:right; background-repeat:no-repeat;'>
 	<div style='display:table-cell; width:360px; height:140px; text-align:center;'><a href="index.php"><img src="imagens/logo.png" border=0></a></div>
 	<div style='display:table-cell; width:620px; height:140px; vertical-align:top;'>
-		<div align="right" style='color:#5b5b5b; font-weight:bold; font-size:12px; padding:40px 8px 0px 0px;'>
-			0800 - 703 1533<br />TEL/FAX: 21(19)3567-1533 - vendas@ceramicabarrobello.com.br
+		<div align="right" style='color:#5b5b5b;font-weight:bold;font-size:12px; padding:40px 8px 0px 0px;'>
+			<span><a href="contato.php" style="text-decoration: none;color:#5b5b5b;font-weight:bold;font-size:12px;" href="#">0800 - 703 1533<br />
+    TEL/FAX: 21(19)3567-1533 - vendas@ceramicabarrobello.com.br</a></span>
 		</div>
 		<div style="padding:0px; margin:20px; margin-right:45px; text-align:right;">
 			<a class=menu href="ceramica.php">A CERÂMICA</a>
